@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen60dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_weight="2"
+        android:padding="@dimen/dimen5dp"
+        app:srcCompat="@drawable/ic_back_white" />
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/qs_bold"
+        android:gravity="center"
+        android:padding="@dimen/dimen5dp"
+        android:tag="@string/detail"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_next"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_weight="2"
+        android:padding="@dimen/dimen5dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

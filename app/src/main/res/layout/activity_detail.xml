@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.detail.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen300dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_news"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen300dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_launcher_background"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:title="@string/detail"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@color/white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen16dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/date_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_24_januari_2018"
+                android:textStyle="italic"
+                android:fontFamily="@font/qs_medium"
+                android:textSize="@dimen/text14sp" />
+
+            <TextView
+                android:id="@+id/title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/benefit_of_eating_watermelon_for_men"
+                android:textSize="@dimen/text20sp"
+                android:gravity="left"
+                android:fontFamily="@font/qs_bold"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#2d2d2d"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/author_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:fontFamily="@font/qs_medium"
+                android:text="@string/default_name"
+                android:textColor="#4e4e4e"
+                android:textStyle="italic"
+                android:textSize="@dimen/text14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#696969"/>
+            <TextView
+                android:id="@+id/content_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_tanggal"
+                android:textColor="#2d2d2d"
+                android:textSize="@dimen/text16sp" />
+            <TextView
+                android:id="@+id/source_news"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/view_more"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/text16sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

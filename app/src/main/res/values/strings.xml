@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">News App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="default_judul">Judul Berita</string>
+    <string name="default_tanggal">20 Januari 2020</string>
+    <string name="default_name">Ihsan Abdurahman</string>
+    <string name="share">Share</string>
+    <string name="headline">Headline</string>
+    <string name="category">Category</string>
+    <string name="setting">"Headlines "</string>
+    <string name="detail">News Detail</string>
+    <string name="_24_januari_2018">20 January 2020</string>
+    <string name="benefit_of_eating_watermelon_for_men">Ihsan Abdurahman</string>
+    <string name="view_more">View Detail</string>
+    <string name="search">Search News</string>
+    <string name="please_input_keyword">Please Input Keyword</string>
+</resources>
